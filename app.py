@@ -22,7 +22,7 @@ st.set_page_config(
 # ══════════════════════════════════════════════════════════════════════════════
 
 # ── Firebase Web API Key (from Firebase Console → Project Settings → General)
-FIREBASE_API_KEY =  st.secrets.get("FIREBASE_API_KEY", None)  # 🔑 e.g. "AIzaSy..."
+FIREBASE_API_KEY =  st.secrets.get("FIREBASE_API_KEY")  # 🔑 e.g. "AIzaSy..."
 
 # ── Gmail credentials for sending OTP emails
 SMTP_EMAIL    = "sandhiyamurali29@gmail.com"            # 📧 Gmail address
@@ -30,7 +30,7 @@ SMTP_PASSWORD = "fkcr yvih ucrl skdy"          # 🔐 Gmail App Password (not yo
 # How to get App Password: Gmail → Settings → Security → 2FA ON → App Passwords → Generate
 
 # ── Groq API Keys (add more to avoid rate limits)
-GROQ_API_KEYS =st.secrets.get("GROQ_API_KEY", None)
+GROQ_API_KEYS =st.secrets.get("GROQ_API_KEY")
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  🔥 FIREBASE AUTH FUNCTIONS
